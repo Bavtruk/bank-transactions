@@ -4,6 +4,7 @@
 
 transactions = []
 
+
 while True:
     print("\nBanking Options:")
     print("1. Deposit")
@@ -15,11 +16,19 @@ while True:
     choice = input("Enter your choice (1-5): ")
 
     if choice == '1':
+        print("What you want to deposit")
+        deposit = int(input())
+        print("Yours deposit:" + str(deposit))
+        transactions.append(deposit)
         # deposit, jāpievieno jaunu transakciju
         # https://www.w3schools.com/python/python_lists_add.asp
         pass
     elif choice == '2':
-        # withdraw, jāpievieno jaunu transakciju ar mīnus zīmi
+        print("What you want to withdraw")
+        withdraw = int(input())
+        print("Yours deposit " + str(withdraw))
+        transactions.append(withdraw)
+                # withdraw, jāpievieno jaunu transakciju ar mīnus zīmi
         # https://www.w3schools.com/python/python_lists_add.asp
         pass
     elif choice == '3':
